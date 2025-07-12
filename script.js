@@ -5,7 +5,7 @@ const sendBtn = document.getElementById('send-btn');
 function addMessage(text, sender) {
   const div = document.createElement('div');
   div.className = `message ${sender}`;
-  div.textContent = text;
+  div.innerHTML = text;
   chatWindow.appendChild(div);
   chatWindow.scrollTop = chatWindow.scrollHeight;
 }
